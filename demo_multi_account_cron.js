@@ -1,4 +1,7 @@
 export default {
+    async fetch() {
+        return new Response("Cron Worker is running.", { status: 200 });
+    },
     async scheduled() {
         // ================= Thông tin tài khoản domain =================
         const CF_API_TOKEN = "cfut_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
